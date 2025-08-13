@@ -1,0 +1,36 @@
+Example 1
+Text:
+"Apple Inc. announced the launch of the iPhone 16 during its annual event in California. The new device features an improved camera system, a faster A18 chip, and longer battery life. Pre-orders will start next Friday, and shipping begins in two weeks."
+
+Questions:
+
+What product did Apple announce?
+
+Where was the event held?
+
+When will pre-orders start?
+
+Example 2
+Text:
+"During the 2024 Olympic Games in Paris, the United States won the gold medal in men's basketball after defeating France 95–87. This marks the fifth consecutive gold medal for the US in this sport."
+
+Questions:
+
+Where were the 2024 Olympic Games held?
+
+Which country won the men's basketball gold medal?
+
+How many consecutive gold medals has the US won in basketball?
+
+Example 3
+Text:
+"NASA successfully launched the Artemis II mission, sending astronauts on a journey around the Moon for the first time in decades. The mission aims to prepare for future human exploration of Mars."
+
+Questions:
+
+What is the name of the mission launched by NASA?
+
+What is the destination of the Artemis II mission?
+
+What is the mission's long-term goal?
+
