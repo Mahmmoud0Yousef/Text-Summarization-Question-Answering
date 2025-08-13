@@ -2,8 +2,9 @@ import streamlit as st
 import torch
 from transformers import T5ForConditionalGeneration, T5Tokenizer, pipeline
 
-# Load the summarization model
-save_dir = "t5-Text-Summarizer"
+
+
+save_dir = "t5-Text-Summarizer" 
 model = T5ForConditionalGeneration.from_pretrained(save_dir)
 tokenizer = T5Tokenizer.from_pretrained(save_dir)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -12,7 +13,6 @@ model.to(device)
 # Q&A pipeline
 qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 
-# Summarization function
 def summarize_text(article):
     inputs = tokenizer(
         article,
@@ -36,11 +36,10 @@ def summarize_text(article):
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 
-# ---------------- Streamlit UI ----------------
-st.title("📄 Text Summarization & Q&A Tool")
 
-# Step 1: Enter text and summarize
-text_input = st.text_area("✏️ Enter text to summarize:")
+st.title("📄 Custom Text Summarization & Q&A")
+
+text_input = st.text_area("✏️ Write your article here:")
 
 if st.button("🔍 Summarize"):
     if text_input.strip():
@@ -52,12 +51,12 @@ if st.button("🔍 Summarize"):
     else:
         st.warning("Please enter some text first.")
 
-# Step 2: Ask questions about the summary
+# إدخال الأسئلة
 if "summary" in st.session_state:
-    st.subheader("❓ Ask questions about the summary")
+    st.subheader("❓ Write your questions about the summary")
     questions_input = st.text_area(
-        "Enter questions (one per line):",
-        placeholder="Example:\nWho is the comedian?\nWhere did the comedian travel?"
+        "Enter your questions (one per line):",
+        placeholder="Example:\nWhat is the main topic?\nWhen did the event happen?"
     )
 
     if st.button("💬 Get Answers"):

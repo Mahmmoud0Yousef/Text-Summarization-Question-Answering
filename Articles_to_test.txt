@@ -26,6 +26,7 @@ Example 3
 Text:
 "NASA successfully launched the Artemis II mission, sending astronauts on a journey around the Moon for the first time in decades. The mission aims to prepare for future human exploration of Mars."
 
+
 Questions:
 
 What is the name of the mission launched by NASA?
@@ -33,4 +34,27 @@ What is the name of the mission launched by NASA?
 What is the destination of the Artemis II mission?
 
 What is the mission's long-term goal?
+
+
+
+Microsoft has announced a $10 billion investment in OpenAI, the company behind the popular AI chatbot ChatGPT. The partnership aims to integrate advanced AI features into Microsoft products like Word, Excel, and Teams. The deal also strengthens Microsoft's position in the cloud computing market, as OpenAI will continue to use Microsoft’s Azure infrastructure for its AI research and deployment.
+
+ممكن بعد ما تعمله Summarize تسأل أسئلة زي:
+
+How much did Microsoft invest in OpenAI?
+
+Which Microsoft products will get AI features?
+
+What cloud service will OpenAI use?
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+
 
